@@ -92,7 +92,7 @@ local function check_deprecated_entries()
 end
 
 local function is_dict_like (tbl)
-    return type(tbl) == 'table' and not vim.tbl_islist(tbl)
+    return type(tbl) == 'table' and not vim.islist(tbl)
 end
 
 local function setup(opts, subsettings)
